@@ -45,7 +45,8 @@ as.numeric(pull(prob1_df, factor_vec))
 
 ```{r}
 as.numeric(pull(prob1_df, samp_gt_0)) * pull(prob1_df, samp)
-
+as.character(pull(prob1_df, samp),factor)* pull(prob1_df, samp)
+as.numeric(as.character(pull(prob1_df, samp),factor))* pull(prob1_df, samp)
 ```
 
 ```
@@ -65,5 +66,11 @@ of penguins with 344 rows and 8 columns
 nrow(penguins)
 ncol(penguins)
 
+mean(penguins$flipper_length_mm)
+
 ```
+
+
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color=species)) + geom_point()
+ggsave("scatterpenguin_plot.pdf", height = 4, width = 6)
 
