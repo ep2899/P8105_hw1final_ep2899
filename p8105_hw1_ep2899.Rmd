@@ -27,7 +27,7 @@ prob1_df =
 
 Take the mean of each variable in my data frame.
 
-```{r}
+```{r mean_pull_var}
 mean(pull(prob1_df, samp))
 mean(pull(prob1_df, samp_gt_0))
 mean(pull(prob1_df, char_vec))
@@ -45,9 +45,24 @@ as.numeric(pull(prob1_df, factor_vec))
 
 ```{r}
 as.numeric(pull(prob1_df, samp_gt_0)) * pull(prob1_df, samp)
+
 ```
 
 ```
 
 
 ## Problem 2
+install.packages("palmerpenguins")
+data("penguins", package = "palmerpenguins")
+
+```{r}
+library(tidyverse)
+```
+
+This dataset contains the species, island, bill length, depth, flipper lengt, body mass, sex, and year
+of penguins with 344 rows and 8 columns
+
+nrow(penguins)
+ncol(penguins)
+
+
