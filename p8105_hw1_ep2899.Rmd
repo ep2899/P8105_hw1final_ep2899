@@ -65,4 +65,5 @@ of penguins with 344 rows and 8 columns
 nrow(penguins)
 ncol(penguins)
 
+```
 
