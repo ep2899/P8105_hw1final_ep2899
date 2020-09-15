@@ -60,14 +60,12 @@ data("penguins", package = "palmerpenguins")
 library(tidyverse)
 ```
 
-This dataset contains the species, island, bill length, depth, flipper lengt, body mass, sex, and year
-of penguins with 344 rows and 8 columns
+This dataset contains the species, island, bill length, depth, flipper lengt, body mass, sex, and year of penguins with 344 rows and 8 columns with a mean penguin flipper length of 200.9152 mm
 
 nrow(penguins)
 ncol(penguins)
 
-mean(penguins$flipper_length_mm)
-
+mean(penguins$flipper_length_mm,na.rm=TRUE)
 ```
 
 
