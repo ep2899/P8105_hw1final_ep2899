@@ -45,7 +45,7 @@ as.numeric(pull(prob1_df, factor_vec))
 
 ```{r}
 as.numeric(pull(prob1_df, samp_gt_0)) * pull(prob1_df, samp)
-as.character(pull(prob1_df, samp),factor)* pull(prob1_df, samp)
+as.character(pull(prob1_df, samp_gt_0),factor)* pull(prob1_df, samp)
 as.numeric(as.character(pull(prob1_df, samp),factor))* pull(prob1_df, samp)
 ```
 
@@ -60,7 +60,7 @@ data("penguins", package = "palmerpenguins")
 library(tidyverse)
 ```
 
-This dataset contains the species, island, bill length, depth, flipper lengt, body mass, sex, and year of penguins with 344 rows and 8 columns with a mean penguin flipper length of 200.9152 mm
+##This dataset contains the species, island, bill length, depth, flipper lengt, body mass, sex, and year of penguins with 344 rows and 8 columns with a mean penguin flipper length of 200.9152 mm
 
 nrow(penguins)
 ncol(penguins)
