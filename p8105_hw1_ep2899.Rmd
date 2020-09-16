@@ -43,7 +43,7 @@ as.numeric(pull(prob1_df, char_vec))
 as.numeric(pull(prob1_df, factor_vec))
 ```
 
-```{r try_multiply}
+```{r, eval=F, echo=T}
 as.numeric(pull(prob1_df, samp_gt_0)) * pull(prob1_df, samp)
 as.character(pull(prob1_df, samp_gt_0),factor)* pull(prob1_df, samp)
 as.numeric(as.character(pull(prob1_df, samp_gt_0),factor))* pull(prob1_df, samp)
