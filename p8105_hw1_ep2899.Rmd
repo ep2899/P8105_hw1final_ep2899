@@ -62,10 +62,11 @@ data("penguins", package = "palmerpenguins")
 library(tidyverse)
 ```
 
-##This penguins dataset contains the following items
-1. species, island, bill length mm, bill depth mm, flipper length mm, body mass g, sex, and year
-1.  there are 344 rows and 8 columns
-1.  mean penguin flipper length is 200.9152 mm
+##In this penguins dataset:
+
+* Species, island, bill length mm, bill depth mm, flipper length mm, body mass g, sex, and year are reported
+* There are 344 rows and 8 columns
+* Mean penguin flipper length is 200.9152 mm
 
 
 nrow(penguins)
